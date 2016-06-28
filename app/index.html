@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Twitter Bootstrap Web Starter Kit</title>
+    <title>Danny Gollas | Web Developer</title>
 
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -25,38 +25,194 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 </head>
 
+
+
+
+
+
+
+
+
+
+
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1>Hello, Twitter Bootstrap Web Starter Kit!</h1>
-                <p>Google Web Starter Kit: 0.6.1</p>
-                <p>Twitter Boostrap 3: 3.3.4</p>
-            </div>
-        </div>
-    </div>
+
+
+   <!-- Navigation -->
+
+   <div id="nav">
+
+      <!-- Main Nav -->
+
+      <ul class="menu">
+      <li><a class="item item-0 menu-toggle"><i class="fa fa-angle-up"></i></a></li>
+      <li><a class="item item-1 menu-toggle" id="aboutMe"><i class="fa fa-user"></i></a></li>
+      <li><a class="item item-2 menu-toggle" id="contact"><i class="fa fa-envelope-o"></i></a></li>
+   </ul>
+
+      <a class="drop menu-toggle"><i class="fa fa-angle-down"></i></a>
+      <a href="#" class="header" id="name">/ DANNY GOLLAS</a>
+      <a href="#" class="header" id="portfolio">PORTFOLIO /</a>
+
+   </div>
+
+
+
+   <!-- About Me -->
+
+   <div  class="aboutMe">
+
+      <!-- Close Button for About Me -->
+      <div class="homebtn" id="home"><i class="fa fa-angle-double-down"></i></div>
+
+      <h1 class="title">ME</h1>
+
+      <ul>
+         <li><p> 19 years of age.</p></li>
+         <div class="divide"></div>
+         <li><p> Reside in Northwest Arkansas.</p></li>
+         <div class="divide"></div>
+         <li><p> Soccer and basketball freak.</p></li>
+         <div class="divide"></div>
+         <li><p> Clean, crisp code.</p></li>
+         <div class="divide"></div>
+         <li><p> HTML (confident).</p></li>
+         <div class="divide"></div>
+         <li><p> CSS (confident).</p></li>
+         <div class="divide"></div>
+         <li><p> Javascript (eh).</p></li>
+         <div class="divide"></div>
+         <li><p> Wordpress (confident).</p></li>
+         <div class="divide"></div>
+         <li><p> ALWAYS MOTIVATED TO LEARN MORE</p></li>
+         <div class="divide"></div>
+      </ul>
+
+
+   </div>
+
+   <!-- Contact -->
+
+   <div  class="contact">
+
+      <!-- Close Button for Contact -->
+      <div class="backbtn" id="back"><i class="fa fa-angle-double-down"></i></div>
+
+      <h1 class="title">@</h1>
+      <h2><a class="email pulse" href="mailto:dgxx24@gmail.com?Subject=Hello%20Danny" target="_top">dgxx24@gmail.com</a><h2>
+      <div class="socialFooter">
+         <a href="http://twitter.com/Mamba240">TWITTER</a>
+         <a> // </a>
+         <a href="http://facebook.com/DannyGCPT">FACEBOOK</a>
+         <a> // </a>
+         <a href="http://github.com/Mamba240">GITHUB</a>
+      </div>
+
+
+   </div>
+
+
+
+   <!-- First Project For Showcase -->
+<div class="portfolio">
+   <div id="arofnwa" class ="portfolio"></div>
+
+   <!-- Toggle For Detail Overlay -->
+   <div id="toggle"><a class="photolink" >AR of NWA</a></div>
+</div>
+
+   <!-- Overlay Details -->
+   <div id="overlay" class="overlay">
+
+            <!-- Close Button for overlay -->
+             <div class="closebtn" id="close"><i class="fa fa-angle-double-down"></i></div>
+
+      <!-- Overlay Content -->
+      <h1>AUTO RESTYLERS OF NWA</h1>
+      <a  class="photolink overlayLink" href="http://arofnwa.com">Continue to site</a>
+      <p class="primary-content">First website I developed for the company I work for.</p>
+      <div class="secondary-content">
+         <a>Created from </a>
+         <a class="sources" href="https://enginethemes.com/themes/oneengine/">this free wordpress theme </a>
+         <a>with heavy modifications.</a>
+      </div>
+      <div id="firstSlideShow">
+         <img class="slideshow one" src="images/arsh1.png">
+         <img class="slideshow two" src="images/arsh2.png">
+         <img class="slideshow three" src="images/arsh3.png">
+         <img class="slideshow four" src="images/arsh4.png">
+         <img class="slideshow five" src="images/arsh5.png">
+      </div>
+      <div class="buttons">
+
+      <div class="slideShowButtons firstSet">
+         <i class="fa fa-angle-right secondPhoto" id="next"></i>
+      </div>
+
+      <div class="slideShowButtons secondSet">
+         <i class="fa fa-angle-left firstPhoto" id="previous"></i>
+      </div>
+
+      <div class="slideShowButtons secondSet">
+         <i class="fa fa-angle-right thirdPhoto" id="next"></i>
+      </div>
+
+      <div class="slideShowButtons thirdSet">
+         <i class="fa fa-angle-left secondPhoto" id="previous"></i>
+      </div>
+
+      <div class="slideShowButtons thirdSet">
+         <i class="fa fa-angle-right fourthPhoto" id="next"></i>
+      </div>
+
+      <div class="slideShowButtons fourthSet">
+         <i class="fa fa-angle-left thirdPhoto" id="previous"></i>
+      </div>
+
+      <div class="slideShowButtons fourthSet">
+         <i class="fa fa-angle-right fifthPhoto" id="next"></i>
+      </div>
+
+      <div class="slideShowButtons fifthSet">
+         <i class="fa fa-angle-left fourthPhoto" id="previous"></i>
+      </div>
+
+   </div>
+   </div>
+
+
+
+</body>
 
 
 
 
-    <script src="scripts/jquery-1.11.1.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+
+
+
+
+
+
+<!--  -->
+<!--  -->
 
     <!-- build:js scripts/bootstrap.min.js -->
     <!-- endbuild -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <script src="scripts/scripts.js"></script>
+      <script src="scripts/playlist.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -74,6 +230,7 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
     </script>
+
     <!-- Built with love using Web Starter Kit -->
 </body>
 
